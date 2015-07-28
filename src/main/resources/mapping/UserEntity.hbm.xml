@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.entity.UserEntity" table="t_ticketuser"
+		lazy="false">
+		<id name="userid" type="java.lang.Long">
+			<column name="user_id"  />
+			<generator class="native"/>
+		</id>
+		<property name="username" type="java.lang.String">
+			<column name="user_name" />
+		</property>
+		<property name="userpassword" type="java.lang.String">
+			<column name="user_password" />
+		</property>
+		<property name="userrealname" type="java.lang.String">
+			<column name="user_realname" />
+		</property>
+		<property name="userschool" type="java.lang.String">
+			<column name="user_school" />
+		</property>
+		<property name="userphonenum" type="java.lang.String">
+			<column name="user_phonenum" />
+		</property>
+		<property name="useremail" type="java.lang.String">
+			<column name="user_email" />
+		</property>
+		<property name="ifvip" type="java.lang.String">
+			<column name="if_vip" />
+		</property>
+		<property name="bsflag" type="java.lang.String">
+			<column name="bsflag" />
+		</property>
+		<property name="createdate" type="java.util.Date">
+			<column name="createdate" />
+		</property>
+		<property name="changedate" type="java.util.Date">
+			<column name="changedate" />
+		</property>
+		</class>
+		</hibernate-mapping>

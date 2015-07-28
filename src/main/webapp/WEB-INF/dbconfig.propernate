@@ -1,0 +1,13 @@
+jdbc.driverClassName=com.mysql.jdbc.Driver
+jdbc.url=jdbc:mysql://127.0.0.1:3306/?useUnicode=true&characterEncoding=utf-8
+jdbc.username=root
+jdbc.password=admin
+hibernate.dialect=org.hibernate.dialect.MySQLDialect
+
+jdbc.initialPoolSize=10
+hibernate.show_sql=true
+hibernate.format_sql=true
+hibernate.cache.use_query_cache=true
+hibernate.substitutions=true 1, false 0, yes 'Y', no 'N'
+hibernate.cache.provider_class=org.hibernate.cache.EhCacheProvider
+hibernate.jdbc.batch_size=50
